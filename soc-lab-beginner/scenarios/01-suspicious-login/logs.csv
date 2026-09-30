@@ -1,0 +1,26 @@
+timestamp_utc,user,ip_address,location,device,auth_method,result,failure_reason
+2026-03-11T08:02:14Z,priya.nair@northwind-example.com,203.0.113.24,"Sydney, AU",Windows 11 - Chrome,Password + MFA,Success,
+2026-03-11T08:47:52Z,daniel.cole@northwind-example.com,203.0.113.51,"Sydney, AU",Windows 11 - Edge,Password + MFA,Success,
+2026-03-11T09:15:03Z,priya.nair@northwind-example.com,203.0.113.24,"Sydney, AU",Windows 11 - Chrome,Password + MFA,Success,
+2026-03-11T09:33:41Z,sara.lund@northwind-example.com,203.0.113.77,"Sydney, AU",macOS - Safari,Password + MFA,Success,
+2026-03-11T11:20:09Z,daniel.cole@northwind-example.com,203.0.113.51,"Sydney, AU",Windows 11 - Edge,Password + MFA,Success,
+2026-03-11T12:41:58Z,priya.nair@northwind-example.com,203.0.113.24,"Sydney, AU",Windows 11 - Chrome,Password,Success,
+2026-03-11T22:14:06Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,Password,Failed,Invalid password
+2026-03-11T22:14:19Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,Password,Failed,Invalid password
+2026-03-11T22:14:33Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,Password,Failed,Invalid password
+2026-03-11T22:14:48Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,Password,Failed,Invalid password
+2026-03-11T22:15:02Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,Password,Failed,Invalid password
+2026-03-11T22:15:19Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,Password,Failed,Invalid password
+2026-03-11T22:15:37Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,Password,Failed,Invalid password
+2026-03-11T22:16:01Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,Password,Failed,Invalid password
+2026-03-11T22:16:20Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,Password,Success,
+2026-03-11T22:17:44Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,Password,Success,
+2026-03-11T22:19:10Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,MFA challenge,Failed,MFA denied by user
+2026-03-11T22:19:52Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,MFA challenge,Failed,MFA denied by user
+2026-03-11T22:21:33Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,MFA challenge,Success,
+2026-03-11T22:24:07Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,Password + MFA,Success,
+2026-03-11T22:31:48Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,Password + MFA,Success,
+2026-03-11T23:02:15Z,daniel.cole@northwind-example.com,198.51.100.212,"Kyiv, UA",Linux - Firefox,Password + MFA,Success,
+2026-03-12T07:58:31Z,priya.nair@northwind-example.com,203.0.113.24,"Sydney, AU",Windows 11 - Chrome,Password + MFA,Success,
+2026-03-12T08:22:47Z,sara.lund@northwind-example.com,203.0.113.77,"Sydney, AU",macOS - Safari,Password + MFA,Success,
+2026-03-12T08:49:12Z,daniel.cole@northwind-example.com,203.0.113.51,"Sydney, AU",Windows 11 - Edge,Password + MFA,Success,
