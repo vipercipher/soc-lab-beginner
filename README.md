@@ -10,7 +10,7 @@ practice file. If you can open a spreadsheet, you can do this.
 
 ---
 
-## 🧭 First, some plain-English background
+## 🧭 First, some plain background
 
 Before you start, here are the only ideas you need. Don't worry about memorising
 them — you'll pick them up as you go, and there's a full
