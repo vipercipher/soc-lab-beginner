@@ -196,4 +196,4 @@ you own or have clear permission to test.
 
 ## 📄 License
 
-[MIT](LICENSE) © Jay Shrestha — free to use, share, and build on.
+[MIT](LICENSE) © Jay — free to use, share, and build on.
