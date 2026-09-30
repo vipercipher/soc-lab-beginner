@@ -61,3 +61,46 @@ suspicious activity against the baseline to see what's out of place.
 **Identify → Contain → Eradicate → Recover**
 A common order of steps for handling an incident: work out what's happening, stop
 it, clean up what the attacker left, then get things back to normal.
+
+---
+
+## Terms you'll meet when you move to a real SIEM
+
+**SIEM (Security Information and Event Management)**
+A tool that collects logs from lots of computers into one place and raises alerts
+when something looks wrong. Elastic Security is one example.
+
+**ECS (Elastic Common Schema)**
+A standard set of field names (like `event.code`, `user.name`, `source.ip`) so
+logs from different sources all look the same. The CSV in this lab uses ECS names
+on purpose, so what you learn here transfers to the real tool.
+
+**event.code 4624 / 4625**
+Windows event IDs. **4624** = a successful logon. **4625** = a failed logon. A
+burst of 4625s followed by a 4624 is a brute force that eventually worked.
+
+**event.outcome**
+An ECS field that says whether an event succeeded or failed (`success` /
+`failure`).
+
+**EDR (Endpoint Detection and Response)**
+Software on a computer that watches what programs do and reports suspicious
+activity. Elastic Defend is an EDR.
+
+**Detection rule**
+A saved condition that automatically raises an alert when matching activity
+appears in the logs.
+
+**Threshold rule**
+A type of detection rule that fires only when something happens a certain number
+of times — e.g. 5+ failed logons for one user. It's how you'd catch the attack in
+this lab automatically.
+
+**KQL / EQL / ES|QL**
+The query languages you type into Elastic to filter logs (KQL), describe a
+sequence of behaviour (EQL), or aggregate and hunt (ES|QL).
+
+**MITRE ATT&CK**
+A public catalogue of the tactics and techniques attackers use, with codes like
+`T1110` (brute force). Detection rules are often mapped to it to show what you can
+and can't catch.

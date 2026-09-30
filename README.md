@@ -11,15 +11,22 @@ some log data, and your job is to work out what happened and what to do first.
 There's nothing to install and nothing dangerous here — just data files to read
 and questions to answer. If you can open a spreadsheet, you can do this lab.
 
+> **The paper version of a real SIEM.** The logs here use the same **ECS
+> (Elastic Common Schema)** field names and **Windows event codes** (4624, 4625)
+> that a real Elastic Security SIEM uses. So this lab doubles as **"day 0"** — it
+> teaches you to *read* alerts and decide what to do, before you stand up the live
+> tool in a full [14-day Elastic SIEM lab](#-where-this-leads).
+
 ---
 
 ## 🎯 What you'll learn
 
-- How to read **sign-in logs** and spot what's normal vs. suspicious
+- How to read **sign-in logs in ECS fields** and spot what's normal vs. suspicious
 - How real attacks like **brute force**, **impossible travel** and **MFA
   fatigue** actually show up in the data
 - The single most important habit of a good analyst: knowing the **correct first
   response** when an account is under attack
+- A first taste of **detection engineering** — turning what you spotted into a rule
 
 ---
 
@@ -49,11 +56,29 @@ and questions to answer. If you can open a spreadsheet, you can do this lab.
 
 | # | Scenario | Skills | Level |
 |---|---|---|---|
-| 01 | [Suspicious Login](scenarios/01-suspicious-login/brief.md) | Brute force, impossible travel, MFA fatigue, containment | 🟢 Beginner |
+| 01 | [Suspicious Login](scenarios/01-suspicious-login/brief.md) | Brute force (4625), impossible travel, MFA fatigue, containment, threshold rules | 🟢 Beginner |
 | 02 | *Coming soon* | | |
 
-More scenarios (phishing emails, unusual downloads, new admin accounts…) will be
-added over time.
+More scenarios (phishing emails, suspicious PowerShell, new admin accounts…) will
+be added over time.
+
+---
+
+## 🚀 Where this leads
+
+Once you're comfortable reading these logs on paper, the next step is doing it
+live. The concepts map one-to-one onto a real SIEM:
+
+| You learned here | You'll do it live in Elastic |
+|---|---|
+| Reading ECS fields in a CSV | Reading the same fields in **Discover** |
+| Spotting 8× `event.code` 4625 | Writing a **Threshold rule** (day 8) |
+| Deciding "contain first" | Working the **alert queue** and writing a **Case** |
+| Following the attacker's steps | The **process analyzer** and **timelines** |
+
+A companion **14-day Elastic SIEM lab** walks you through standing up a free
+Elastic trial, shipping Windows logs, firing real alerts, and writing your own
+detections. This paper lab is the gentlest possible on-ramp to it.
 
 ---
 
