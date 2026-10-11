@@ -154,4 +154,4 @@ what is normal in your environment.
 - Microsoft Learn: [4625: An account failed to log on](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625)
 - MITRE ATT&CK: [T1110 Brute Force](https://attack.mitre.org/techniques/T1110/) · [T1021.001 Remote Desktop Protocol](https://attack.mitre.org/techniques/T1021/001/)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 02: Linux `auth.log` (12 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 02: Linux `auth.log` (12 Oct)](2026-10-12-linux-ssh-brute-force.md)
