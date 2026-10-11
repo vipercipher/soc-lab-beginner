@@ -138,6 +138,13 @@ didn't get everything — reading the walkthrough *is* the learning.
 More scenarios (suspicious emails, odd PowerShell commands, surprise admin
 accounts…) will be added over time. ⭐ Star this repo to find it again.
 
+### 📓 Daily learning log
+
+Alongside the scenarios, the **[SOC Learning Log](learning-log/README.md)** is a
+21-day series (October 2026) covering one blue-team topic a day: Windows and
+Linux logs, Sigma rules, PowerShell, phishing triage, MITRE ATT&CK and incident
+response, each with exercises and my own answers.
+
 ---
 
 ## 🚀 Where this leads (your next step after the lab)
