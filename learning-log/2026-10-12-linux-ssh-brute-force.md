@@ -181,4 +181,4 @@ check what your environment extracts before relying on `process` or `host`.
 - MITRE ATT&CK: [T1110.001 Password Guessing](https://attack.mitre.org/techniques/T1110/001/) · [T1021.004 SSH](https://attack.mitre.org/techniques/T1021/004/)
 - SigmaHQ: [Linux detection rules](https://github.com/SigmaHQ/sigma/tree/master/rules/linux)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 03: Password spraying vs brute force (13 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 03: Password spraying vs brute force (13 Oct)](2026-10-13-password-spraying-vs-brute-force.md)

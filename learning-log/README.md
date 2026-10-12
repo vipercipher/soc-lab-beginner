@@ -34,7 +34,7 @@ and every entry ends with exercises answered in my own words.
 |---|---|---|---|
 | 01 | 11 Oct | Windows logon events: 4624, 4625 and logon types | [Read](2026-10-11-windows-logon-events.md) |
 | 02 | 12 Oct | Linux `auth.log`: spotting SSH brute force | [Read](2026-10-12-linux-ssh-brute-force.md) |
-| 03 | 13 Oct | Password spraying vs brute force | |
+| 03 | 13 Oct | Password spraying vs brute force | [Read](2026-10-13-password-spraying-vs-brute-force.md) |
 | 04 | 14 Oct | Writing your first Sigma rule | |
 | 05 | 15 Oct | Sysmon Event ID 1: process creation | |
 | 06 | 16 Oct | Suspicious PowerShell: encoded commands | |
@@ -58,7 +58,7 @@ and every entry ends with exercises answered in my own words.
 
 ## Progress
 
-- Entries published: **2 / 21**
+- Entries published: **3 / 21**
 - Exercises answered: tracked in each entry's **My answers** section
 
 ➡️ Back to the main [Beginner SOC Lab](../README.md).
