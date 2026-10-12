@@ -63,7 +63,8 @@ Two details to remember:
 ## Sample logs
 
 A simplified extract from `/var/log/auth.log` on `web01`, a public-facing Ubuntu
-web server at the fictional company Northwind. Times are UTC.
+web server at the fictional company Northwind. Times are UTC. Northwind sets
+`MaxAuthTries 3` on `web01` (the OpenSSH default is 6).
 
 ```
 Oct 12 01:58:12 web01 sshd[3990]: Accepted publickey for priya.nair from 203.0.113.24 port 61544 ssh2: ED25519 SHA256:Xq3k...
@@ -87,8 +88,9 @@ Oct 12 03:00:01 web01 CRON[4301]: pam_unix(cron:session): session opened for use
 
 ## What to look for
 
-1. **One IP, many attempts, seconds apart.** `198.51.100.143` makes ten
-   attempts in about 20 seconds. No person types that fast.
+1. **One IP, many attempts, seconds apart.** `198.51.100.143` makes eight
+   password attempts (seven failures, then a success) in about 23 seconds. No
+   person types that fast.
 2. **Guessed usernames first.** `Invalid user admin` and `test` show the
    attacker working through a list of common names, just like `admin` and
    `test` against RDP yesterday.
@@ -112,7 +114,7 @@ Oct 12 03:00:01 web01 CRON[4301]: pam_unix(cron:session): session opened for use
 
 ## Detection logic
 
-**In plain English:** alert when one source IP has **10 or more failed SSH
+**In plain English:** alert when one source IP has **5 or more failed SSH
 logins** on a host within 10 minutes. Raise the severity if the **same IP also
 gets an `Accepted`** login in that window.
 
@@ -127,7 +129,7 @@ index=linux sourcetype=linux_secure process=sshd ("Failed password" OR "Accepted
         dc(user) AS distinct_users,
         values(user) AS users
         by _time, host, src_ip
-| where failures >= 10
+| where failures >= 5
 | eval severity=if(successes > 0, "high", "medium")
 | sort - failures
 ```
