@@ -168,10 +168,10 @@ check what your environment extracts before relying on `process` or `host`.
 
 <!-- Answer each question in your own words, then commit. -->
 
-1.
-2.
-3.
-4.
+1. `MaxAuthTries`. On `web01` it's set to 3, so sshd drops the connection after the third wrong password ("maximum authentication attempts exceeded", then "Too many authentication failures"). It doesn't stop the attack because the limit is per connection, not per account or per IP. The attacker just opens a new connection (new port, 50330) and keeps guessing, which is exactly how they got into `deploy`.
+2. `Invalid user admin` / `test` and `Failed password for invalid user ...` → 4625 with `0xC0000064` (username doesn't exist). `Failed password for root` and `for deploy` → 4625 with `0xC000006A` (real account, wrong password). `Accepted password for deploy` → 4624, closest to logon type 10 since it's a remote login. The `session opened` line is the shell that follows that 4624. The `MaxAuthTries` disconnect has no neat Windows equivalent. The nearest is lockout (`0xC0000234`), but lockout blocks the account for a while, whereas this only closes one connection and the account stays usable.
+3. (1) Contain: kill the `deploy` session (sshd PID 4190) and block `198.51.100.143` at the firewall. (2) Lock the `deploy` account and reset its password, and check `~deploy/.ssh/authorized_keys` for any key the attacker added to get back in. (3) Scope: look at what happened after 02:14:24, including `sudo` lines in `auth.log`, the shell history, new cron jobs or users, and outbound connections. Then search the other servers' logs for that IP and for `deploy` logins.
+4. (a) Set `PasswordAuthentication no` so only SSH keys work. Guessing becomes pointless, and `auth.log` would show no `Failed password` or `Accepted password` lines from the attacker, just short `Connection closed by ... [preauth]` lines. (b) Limit port 22 with the firewall so only Northwind's admin IPs (like `203.0.113.24`) can reach it. The attacker's packets get dropped before sshd ever sees them, so `auth.log` would show nothing at all from `198.51.100.143`, and the attempts would only appear in the firewall logs. (A tool like fail2ban is a weaker option: you'd see a few failures, then the IP gets banned and the lines stop.)
 
 ---
 
