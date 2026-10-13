@@ -216,4 +216,4 @@ Scope: search SigninLogs for every result from that IP, and for other IPs hittin
 - Microsoft Learn: [Microsoft Entra authentication and authorization error codes](https://learn.microsoft.com/en-us/entra/identity-platform/reference-error-codes) · [`SigninLogs` table reference](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs)
 - MITRE ATT&CK: [T1110.003 Password Spraying](https://attack.mitre.org/techniques/T1110/003/) · [T1110.001 Password Guessing](https://attack.mitre.org/techniques/T1110/001/)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 04: Writing your first Sigma rule (14 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 04: Writing your first Sigma rule (14 Oct)](2026-10-14-first-sigma-rule.md)
