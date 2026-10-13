@@ -193,10 +193,19 @@ split in two.
 
 <!-- Answer each question in your own words, then commit. -->
 
-1.
-2.
-3.
-4.
+1. Smart Lockout and the per-user alert both count failures for one account, and the spray put only one failure on each account. That’s far below Smart Lockout’s default of 10 and below the alert’s 5, so neither fires. Today’s rule counts per IP per hour, so an attacker could get past it by:
+
+spreading the attempts across many IPs, so no single IP fails against 5 users;
+slowing down, so fewer than 5 users are tried from one IP in any one-hour bucket;
+or splitting a burst across the hour boundary.
+
+2. It’s Marco’s 50074 row. The rule counts only 50126, 50034 and 50053 as failures, and 50074 means “MFA required”, not a wrong password. That’s worse than the other rows: his password was correct, so the attacker now knows a working password, and only MFA stopped them. If MFA gets bypassed, they’re in. The same password may also work for Marco on other systems.
+
+3. Contain Marco: reset his password, revoke his active sessions and refresh tokens, and confirm his MFA methods weren’t changed. Tell him not to approve any prompts he didn’t start, since Scenario 01’s attacker pushed MFA prompts until one was approved.
+Contain the IP: block 198.51.100.66, for example with a Conditional Access named-location block or at the firewall.
+Scope: search SigninLogs for every result from that IP, and for other IPs hitting the same users around that time. Check the other 8 targeted accounts for any later successful sign-in. Push all users off weak passwords (a banned-password list) and make sure MFA is enforced for everyone.
+
+4. Expect a run of 4625 events (logon type 3 for network, or 10 if it’s over RDP) from one IpAddress with SubStatus 0xC000006A. That means real account, wrong password, with the odd 0xC0000064 for guessed names that don’t exist. The field with many different values is TargetUserName (the account name), with only one or two attempts per account. Brute force looks the opposite way: one account name, many attempts.
 
 ---
 
