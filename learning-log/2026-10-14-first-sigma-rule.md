@@ -335,4 +335,4 @@ base rule and do the counting in the SIEM, as on Day 01.
 - Microsoft Learn: [4625: An account failed to log on](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625)
 - MITRE ATT&CK: [T1110.001 Password Guessing](https://attack.mitre.org/techniques/T1110/001/)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 05: Sysmon Event ID 1: process creation (15 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 05: Sysmon Event ID 1: process creation (15 Oct)](2026-10-15-sysmon-process-creation.md)

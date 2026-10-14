@@ -36,7 +36,7 @@ and every entry ends with exercises answered in my own words.
 | 02 | 12 Oct | Linux `auth.log`: spotting SSH brute force | [Read](2026-10-12-linux-ssh-brute-force.md) |
 | 03 | 13 Oct | Password spraying vs brute force | [Read](2026-10-13-password-spraying-vs-brute-force.md) |
 | 04 | 14 Oct | Writing your first Sigma rule | [Read](2026-10-14-first-sigma-rule.md) |
-| 05 | 15 Oct | Sysmon Event ID 1: process creation | |
+| 05 | 15 Oct | Sysmon Event ID 1: process creation | [Read](2026-10-15-sysmon-process-creation.md) |
 | 06 | 16 Oct | Suspicious PowerShell: encoded commands | |
 | 07 | 17 Oct | Parent–child process anomalies (Office spawning shells) | |
 | 08 | 18 Oct | Phishing triage: reading email headers (SPF, DKIM, DMARC) | |
@@ -58,7 +58,7 @@ and every entry ends with exercises answered in my own words.
 
 ## Progress
 
-- Entries published: **4 / 21**
+- Entries published: **5 / 21**
 - Exercises answered: tracked in each entry's **My answers** section
 
 ➡️ Back to the main [Beginner SOC Lab](../README.md).
