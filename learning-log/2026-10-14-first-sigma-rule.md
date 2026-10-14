@@ -271,61 +271,60 @@ base rule and do the counting in the SIEM, as on Day 01.
 
 <!-- Answer each question in your own words, then commit. -->
 
-1. Fields in the same block are AND. EventID: 4625 with LogonType: 10 only matches an event that is a failed logon and a Remote Desktop (RDP) logon. A list under one field is OR. LogonType: [3, 10] matches an event whose logon type is 3 or 10. One event can’t have two logon types, so the list only makes sense as “any of these values.”
+1. Fields in the same block are AND: `EventID: 4625` with `LogonType: 10` only matches an event that is a failed logon *and* an RDP logon. A list under one field is OR: `LogonType: [3, 10]` matches if the logon type is 3 *or* 10. One event can only have one logon type, so a list really means "any of these values".
 
-2. Base rule for Day 02’s SSH failures
-title: SSH Failed Password
-id: 7b2e4c1a-9f3d-4e8b-a6c5-2d1f0e9b8a47
-status: experimental
-description: Detects a single failed SSH password attempt in sshd logs.
-author: Jay (SOC learning log)
-date: 2026-10-14
-tags:
-  - attack.credential-access
-  - attack.t1110.001
-logsource:
-  product: linux
-  service: sshd
-detection:
-  keywords:
-    - 'Failed password'
-  condition: keywords
-falsepositives:
-  - Users mistyping their password
-level: low
-keywords searches the whole log message, so Failed password also catches Failed password for invalid user .... The rule would not catch these lines:
+2. My base rule:
 
-Invalid user admin and Invalid user test: the username checks that come before the password attempt.
-maximum authentication attempts exceeded and Disconnecting ... Too many authentication failures: the MaxAuthTries cut-off.
-Accepted password for deploy and session opened: this is the line that matters most. A rule that only matches failures never sees the attack succeed. You’d need a second base rule for Accepted password, joined to this one with a temporal correlation, to catch “failures, then a success.”
+```yaml
+   title: SSH Failed Password
+   id: 7b2e4c1a-9f3d-4e8b-a6c5-2d1f0e9b8a47
+   status: experimental
+   description: Detects a single failed SSH password attempt in sshd logs.
+   author: Jay (SOC learning log)
+   date: 2026-10-14
+   tags:
+     - attack.credential-access
+     - attack.t1110.001
+   logsource:
+     product: linux
+     service: sshd
+   detection:
+     keywords:
+       - 'Failed password'
+     condition: keywords
+   falsepositives:
+     - Users mistyping their password
+   level: low
+```
 
-3. Turning the correlation into a spray detector
-Type: value_count, because you’re counting distinct users, not events.
-Field: the username. That’s TargetUserName in Windows logs, or UserPrincipalName for Day 03’s Entra ID sign-ins.
-Group by: the source IP (IpAddress in Windows logs, IPAddress in Entra ID sign-in logs).
-correlation:
-  type: value_count
-  rules:
-    - failed_signin   # base rule matching ResultType 50126 / 50034
-  group-by:
-    - IPAddress
-  timespan: 1h
-  condition:
-    field: UserPrincipalName
-    gte: 5
-On Day 03’s sample, 198.51.100.66 failed against 8 distinct users, so 8 ≥ 5 and the rule fires. Brute force against one account would count as 1 and stay quiet. That’s the opposite of event_count.
+   `keywords` searches the whole message, so it also catches `Failed password for invalid user ...`. It would **not** catch the `Invalid user admin` / `test` lines, the `maximum authentication attempts exceeded` and `Too many authentication failures` lines, or, most importantly, `Accepted password for deploy` and the `session opened` line. A rule that only matches failures never sees the attack succeed. To catch "failures, then a success" I'd need a second base rule for `Accepted password` and a `temporal` correlation joining the two.
 
-4. Filtering out 203.0.113.0/24
-  filter_trusted_range:
-    IpAddress|cidr: '203.0.113.0/24'
-  condition: selection and not filter_trusted_range
+3. I'd use `value_count`, because spraying is about how many **different users** fail, not how many events there are. It would count the username field (`UserPrincipalName` in Day 03's Entra ID logs, or `TargetUserName` in Windows logs) and `group-by` the source IP:
 
-Argue against it. That range is where Priya (.24), Sara (.77) and the jump host (.10) all sit, so it’s where real users and admin accounts work from. If an attacker steals a VPN login, as in Scenario 01, their traffic comes from the trusted range. Brute-forcing or password-guessing against internal servers from there would be completely invisible. That kind of lateral movement is exactly what you most need to see. Filtering a whole /24 also hides any future host in it.
+```yaml
+   correlation:
+     type: value_count
+     rules:
+       - failed_signin   # base rule matching ResultType 50126 / 50034
+     group-by:
+       - IPAddress
+     timespan: 1h
+     condition:
+       field: UserPrincipalName
+       gte: 5
+```
 
-Better options:
-Keep filtering only the one jump host IP, as the rule already does.
-Give internal sources a lower level instead of dropping them.
-Tune out specific known-noisy accounts (such as svc_monitor) rather than a whole network.
+   On Day 03's sample, `198.51.100.66` failed against 8 distinct users, so 8 ≥ 5 and it fires. A brute force against one account would only count as 1, which is the opposite of `event_count`.
+
+4. The filter:
+
+```yaml
+     filter_trusted_range:
+       IpAddress|cidr: '203.0.113.0/24'
+     condition: selection and not filter_trusted_range
+```
+
+   I'd argue **against** it. That range is where Priya (`.24`), Sara (`.77`) and the jump host (`.10`) all sit, so it's where real users and admin accounts work from. If an attacker steals a VPN login (like Daniel's password in Scenario 01), their traffic comes *from* the trusted range, and password guessing or lateral movement against internal servers would be completely invisible. That's exactly the activity I most need to see. Filtering a whole /24 also silently hides any future host added to it. Instead, I'd keep filtering only the single jump host IP, lower the `level` for internal sources rather than dropping them, and tune out specific noisy accounts like `svc_monitor` instead of a whole network.
 ---
 
 ## Further reading
