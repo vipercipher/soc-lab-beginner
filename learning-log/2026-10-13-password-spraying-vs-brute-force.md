@@ -195,9 +195,9 @@ split in two.
 
 1. Smart Lockout and the per-user alert both count failures for one account, and the spray put only one failure on each account. That’s far below Smart Lockout’s default of 10 and below the alert’s 5, so neither fires. Today’s rule counts per IP per hour, so an attacker could get past it by:
 
-spreading the attempts across many IPs, so no single IP fails against 5 users;
-slowing down, so fewer than 5 users are tried from one IP in any one-hour bucket;
-or splitting a burst across the hour boundary.
+- spreading the attempts across many IPs, so no single IP fails against 5 users;
+- slowing down, so fewer than 5 users are tried from one IP in any one-hour bucket;
+- or splitting a burst across the hour boundary.
 
 2. It’s Marco’s 50074 row. The rule counts only 50126, 50034 and 50053 as failures, and 50074 means “MFA required”, not a wrong password. That’s worse than the other rows: his password was correct, so the attacker now knows a working password, and only MFA stopped them. If MFA gets bypassed, they’re in. The same password may also work for Marco on other systems.
 
