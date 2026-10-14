@@ -142,8 +142,11 @@ what is normal in your environment.
 <!-- Answer each question in your own words, then commit. -->
 
 1. Three rows look normal. `priya.nair` (type 3, 08:31) is a single network logon during business hours from her usual IP, like opening a shared folder. `svc_backup` (type 4) is a scheduled task, the nightly backup job running as expected. `sara.lund` (type 7) is just her unlocking her screen. None of them have failed attempts before them, odd hours, or an unknown IP.
-2. `admin` and `test` both failed with `0xC0000064`, meaning the username doesn't exist. The attacker was guessing common names from a list. `administrator` failed with `0xC000006A`, a real account with the wrong password. So once the attacker found a valid account, they switched to guessing its password, and eventually got it right.
+   
+2. `admin` and `test` both failed with `0xC0000064`, meaning the username doesn't exist. The attacker was guessing common names from a list. `administrator` failed with `0xC000006A`, a real account with the wrong password. So once the attacker found a valid account, they switched to guessing its password, and eventually got it right
+   
 3. First, contain: end the attacker's RDP session and cut them off by blocking `198.51.100.87` at the firewall, or isolate FS01 from the network. Second, disable the `administrator` account (or reset its password) so the stolen credentials stop working. Only after that would I start scoping what they did while they were logged in.
+   
 4. A type 3 (network) logon from the same IP on a different server means the attacker is reusing the stolen admin credentials to move between machines (lateral movement). The incident is no longer just FS01. Every server that account touched could be compromised, so the scope and the containment work both get bigger, and I'd need to search for that IP and account across all hosts.
 
 ---
