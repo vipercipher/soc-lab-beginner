@@ -37,7 +37,7 @@ and every entry ends with exercises answered in my own words.
 | 03 | 13 Oct | Password spraying vs brute force | [Read](2026-10-13-password-spraying-vs-brute-force.md) |
 | 04 | 14 Oct | Writing your first Sigma rule | [Read](2026-10-14-first-sigma-rule.md) |
 | 05 | 15 Oct | Sysmon Event ID 1: process creation | [Read](2026-10-15-sysmon-process-creation.md) |
-| 06 | 16 Oct | Suspicious PowerShell: encoded commands | |
+| 06 | 16 Oct | Suspicious PowerShell: encoded commands | [Read](2026-10-16-powershell-encoded-commands.md) |
 | 07 | 17 Oct | Parent–child process anomalies (Office spawning shells) | |
 | 08 | 18 Oct | Phishing triage: reading email headers (SPF, DKIM, DMARC) | |
 | 09 | 19 Oct | IOCs vs behaviours: the Pyramid of Pain | |
@@ -58,7 +58,7 @@ and every entry ends with exercises answered in my own words.
 
 ## Progress
 
-- Entries published: **5 / 21**
+- Entries published: **6 / 21**
 - Exercises answered: tracked in each entry's **My answers** section
 
 ➡️ Back to the main [Beginner SOC Lab](../README.md).

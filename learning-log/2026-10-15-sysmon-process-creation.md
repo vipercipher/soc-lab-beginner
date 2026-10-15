@@ -341,4 +341,4 @@ name). That's rare enough in normal use to alert on directly.
 - SigmaHQ: [Log sources](https://sigmahq.io/docs/basics/log-sources.html) · [Sigma correlation rules specification](https://github.com/SigmaHQ/sigma-specification/blob/main/specification/sigma-correlation-rules-specification.md)
 - MITRE ATT&CK: [TA0007 Discovery](https://attack.mitre.org/tactics/TA0007/) · [T1036.003 Rename System Utilities](https://attack.mitre.org/techniques/T1036/003/) · [T1069.002 Domain Groups](https://attack.mitre.org/techniques/T1069/002/)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 06: Suspicious PowerShell: encoded commands (16 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 06: Suspicious PowerShell: encoded commands (16 Oct)](2026-10-16-powershell-encoded-commands.md)
