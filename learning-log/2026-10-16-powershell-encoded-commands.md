@@ -333,4 +333,4 @@ and that silence means "not collected", not "nothing happened".
 - MITRE ATT&CK: [T1059.001 PowerShell](https://attack.mitre.org/techniques/T1059/001/) · [T1027.010 Command Obfuscation](https://attack.mitre.org/techniques/T1027/010/) · [T1105 Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105/)
 - CyberChef (GCHQ): [CyberChef](https://gchq.github.io/CyberChef/)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 07: Parent–child process anomalies (Office spawning shells) (17 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 07: Parent–child process anomalies (Office spawning shells) (17 Oct)](2026-10-17-office-parent-child-anomalies.md)
