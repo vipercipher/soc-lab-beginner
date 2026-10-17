@@ -369,4 +369,4 @@ macro malware doesn't bother, which is why this rule still earns its place.
 - SigmaHQ: [Windows process creation rules](https://github.com/SigmaHQ/sigma/tree/master/rules/windows/process_creation)
 - MITRE ATT&CK: [T1566.001 Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001/) · [T1204.002 Malicious File](https://attack.mitre.org/techniques/T1204/002/) · [T1059.003 Windows Command Shell](https://attack.mitre.org/techniques/T1059/003/) · [T1134.004 Parent PID Spoofing](https://attack.mitre.org/techniques/T1134/004/)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 08: Phishing triage: reading email headers (SPF, DKIM, DMARC) (18 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 08: Phishing triage: reading email headers (SPF, DKIM, DMARC) (18 Oct)](2026-10-18-phishing-email-headers.md)

@@ -39,7 +39,7 @@ and every entry ends with exercises answered in my own words.
 | 05 | 15 Oct | Sysmon Event ID 1: process creation | [Read](2026-10-15-sysmon-process-creation.md) |
 | 06 | 16 Oct | Suspicious PowerShell: encoded commands | [Read](2026-10-16-powershell-encoded-commands.md) |
 | 07 | 17 Oct | Parent–child process anomalies (Office spawning shells) | [Read](2026-10-17-office-parent-child-anomalies.md) |
-| 08 | 18 Oct | Phishing triage: reading email headers (SPF, DKIM, DMARC) | |
+| 08 | 18 Oct | Phishing triage: reading email headers (SPF, DKIM, DMARC) | [Read](2026-10-18-phishing-email-headers.md) |
 | 09 | 19 Oct | IOCs vs behaviours: the Pyramid of Pain | |
 | 10 | 20 Oct | Mapping detections to MITRE ATT&CK | |
 | 11 | 21 Oct | Web server logs: SQL injection attempts in Nginx access logs | |
@@ -58,7 +58,7 @@ and every entry ends with exercises answered in my own words.
 
 ## Progress
 
-- Entries published: **7 / 21**
+- Entries published: **8 / 21**
 - Exercises answered: tracked in each entry's **My answers** section
 
 ➡️ Back to the main [Beginner SOC Lab](../README.md).
