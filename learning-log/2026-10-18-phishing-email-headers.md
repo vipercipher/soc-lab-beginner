@@ -327,4 +327,4 @@ spoof Northwind to your customers.
 - NIST: [SP 800-177 Rev. 1, Trustworthy Email](https://csrc.nist.gov/pubs/sp/800/177/r1/final)
 - MITRE ATT&CK: [T1566.001 Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001/) · [T1583.001 Acquire Infrastructure: Domains](https://attack.mitre.org/techniques/T1583/001/) · [T1656 Impersonation](https://attack.mitre.org/techniques/T1656/)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 09: IOCs vs behaviours: the Pyramid of Pain (19 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 09: IOCs vs behaviours: the Pyramid of Pain (19 Oct)](2026-10-19-pyramid-of-pain.md)
