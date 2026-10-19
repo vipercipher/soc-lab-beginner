@@ -41,7 +41,7 @@ and every entry ends with exercises answered in my own words.
 | 07 | 17 Oct | Parent–child process anomalies (Office spawning shells) | [Read](2026-10-17-office-parent-child-anomalies.md) |
 | 08 | 18 Oct | Phishing triage: reading email headers (SPF, DKIM, DMARC) | [Read](2026-10-18-phishing-email-headers.md) |
 | 09 | 19 Oct | IOCs vs behaviours: the Pyramid of Pain | [Read](2026-10-19-pyramid-of-pain.md) |
-| 10 | 20 Oct | Mapping detections to MITRE ATT&CK | |
+| 10 | 20 Oct | Mapping detections to MITRE ATT&CK | [Read](2026-10-20-mapping-to-mitre-attack.md) |
 | 11 | 21 Oct | Web server logs: SQL injection attempts in Nginx access logs | |
 | 12 | 22 Oct | DNS logs: beaconing and random-looking domains | |
 | 13 | 23 Oct | Firewall logs: recognising a port scan | |
@@ -58,7 +58,7 @@ and every entry ends with exercises answered in my own words.
 
 ## Progress
 
-- Entries published: **9 / 21**
+- Entries published: **10 / 21**
 - Exercises answered: tracked in each entry's **My answers** section
 
 ➡️ Back to the main [Beginner SOC Lab](../README.md).

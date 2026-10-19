@@ -287,4 +287,4 @@ someone innocent next month.
 - Splunk Docs: [Evaluation functions](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/CommonEvalFunctions) · [stats](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/Stats)
 - MITRE ATT&CK: [T1566.001 Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001/) · [T1059.001 PowerShell](https://attack.mitre.org/techniques/T1059/001/) · [T1105 Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105/) · [T1583.001 Acquire Infrastructure: Domains](https://attack.mitre.org/techniques/T1583/001/)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 10: Mapping detections to MITRE ATT&CK (20 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 10: Mapping detections to MITRE ATT&CK (20 Oct)](2026-10-20-mapping-to-mitre-attack.md)
