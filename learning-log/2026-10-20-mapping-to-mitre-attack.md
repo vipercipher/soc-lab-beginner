@@ -307,4 +307,4 @@ mappings at least whenever MITRE publishes a new version.
 - SigmaHQ: [Sigma specification (including tags)](https://github.com/SigmaHQ/sigma-specification)
 - Splunk Docs: [lookup](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/Lookup) · [stats](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/Stats)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 11: Web server logs: SQL injection attempts in Nginx access logs (21 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 11: Web server logs: SQL injection attempts in Nginx access logs (21 Oct)](2026-10-21-nginx-sql-injection.md)
