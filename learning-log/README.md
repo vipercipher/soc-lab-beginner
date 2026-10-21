@@ -43,7 +43,7 @@ and every entry ends with exercises answered in my own words.
 | 09 | 19 Oct | IOCs vs behaviours: the Pyramid of Pain | [Read](2026-10-19-pyramid-of-pain.md) |
 | 10 | 20 Oct | Mapping detections to MITRE ATT&CK | [Read](2026-10-20-mapping-to-mitre-attack.md) |
 | 11 | 21 Oct | Web server logs: SQL injection attempts in Nginx access logs | [Read](2026-10-21-nginx-sql-injection.md) |
-| 12 | 22 Oct | DNS logs: beaconing and random-looking domains | |
+| 12 | 22 Oct | DNS logs: beaconing and random-looking domains | [Read](2026-10-22-dns-beaconing.md) |
 | 13 | 23 Oct | Firewall logs: recognising a port scan | |
 | 14 | 24 Oct | Persistence: new accounts and admin group changes (4720, 4732) | |
 | 15 | 25 Oct | Persistence: scheduled tasks and new services (4698, 7045) | |
@@ -58,7 +58,7 @@ and every entry ends with exercises answered in my own words.
 
 ## Progress
 
-- Entries published: **11 / 21**
+- Entries published: **12 / 21**
 - Exercises answered: tracked in each entry's **My answers** section
 
 ➡️ Back to the main [Beginner SOC Lab](../README.md).

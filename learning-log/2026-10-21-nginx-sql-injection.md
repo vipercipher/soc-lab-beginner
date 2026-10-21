@@ -308,4 +308,4 @@ For Day 10's mapping lookup, this becomes rule **NW-008**:
 - SigmaHQ: [Web server detection rules](https://github.com/SigmaHQ/sigma/tree/master/rules/web)
 - Splunk Docs: [List of pretrained source types](https://docs.splunk.com/Documentation/Splunk/latest/Data/Listofpretrainedsourcetypes) · [Text functions (`urldecode`)](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/TextFunctions)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 12: DNS logs: beaconing and random-looking domains (22 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 12: DNS logs: beaconing and random-looking domains (22 Oct)](2026-10-22-dns-beaconing.md)
