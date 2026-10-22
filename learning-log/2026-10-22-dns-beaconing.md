@@ -295,4 +295,4 @@ NW-010,Command and Control,T1568.002,Domain Generation Algorithms
 - Splunk Docs: [Splunk Add-on for Sysmon](https://docs.splunk.com/Documentation/AddOns/released/MSSysmon/About) · [streamstats](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/Streamstats)
 - NIST: [SP 800-81-2, Secure Domain Name System (DNS) Deployment Guide](https://csrc.nist.gov/pubs/sp/800/81/2/final)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 13: Firewall logs: recognising a port scan (23 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 13: Firewall logs: recognising a port scan (23 Oct)](2026-10-23-firewall-port-scan.md)
