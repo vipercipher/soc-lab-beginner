@@ -303,4 +303,4 @@ NW-012,Reconnaissance,T1595.001,Scanning IP Blocks
 - Nmap Reference Guide: [Port scanning techniques](https://nmap.org/book/man-port-scanning-techniques.html) · [Port states](https://nmap.org/book/man-port-scanning-basics.html)
 - NIST: [SP 800-41 Rev. 1, Guidelines on Firewalls and Firewall Policy](https://csrc.nist.gov/pubs/sp/800/41/r1/final)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 14: Persistence: new accounts and admin group changes (4720, 4732) (24 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 14: Persistence: new accounts and admin group changes (4720, 4732) (24 Oct)](2026-10-24-new-accounts-admin-groups.md)

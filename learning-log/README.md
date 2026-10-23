@@ -45,7 +45,7 @@ and every entry ends with exercises answered in my own words.
 | 11 | 21 Oct | Web server logs: SQL injection attempts in Nginx access logs | [Read](2026-10-21-nginx-sql-injection.md) |
 | 12 | 22 Oct | DNS logs: beaconing and random-looking domains | [Read](2026-10-22-dns-beaconing.md) |
 | 13 | 23 Oct | Firewall logs: recognising a port scan | [Read](2026-10-23-firewall-port-scan.md) |
-| 14 | 24 Oct | Persistence: new accounts and admin group changes (4720, 4732) | |
+| 14 | 24 Oct | Persistence: new accounts and admin group changes (4720, 4732) | [Read](2026-10-24-new-accounts-admin-groups.md) |
 | 15 | 25 Oct | Persistence: scheduled tasks and new services (4698, 7045) | |
 | 16 | 26 Oct | Defence evasion: cleared audit logs (1102) | |
 | 17 | 27 Oct | Alert triage: true/false positives and severity | |
@@ -58,7 +58,7 @@ and every entry ends with exercises answered in my own words.
 
 ## Progress
 
-- Entries published: **13 / 21**
+- Entries published: **14 / 21**
 - Exercises answered: tracked in each entry's **My answers** section
 
 ➡️ Back to the main [Beginner SOC Lab](../README.md).
