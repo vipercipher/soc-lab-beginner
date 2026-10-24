@@ -287,4 +287,4 @@ NW-014,Persistence,T1136.001,Create Account: Local Account
 - MITRE ATT&CK: [T1136.001 Create Account: Local Account](https://attack.mitre.org/techniques/T1136/001/) · [T1098.007 Additional Local or Domain Groups](https://attack.mitre.org/techniques/T1098/007/)
 - SigmaHQ: [Windows Security log rules](https://github.com/SigmaHQ/sigma/tree/master/rules/windows/builtin/security)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 15: Persistence: scheduled tasks and new services (4698, 7045) (25 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 15: Persistence: scheduled tasks and new services (4698, 7045) (25 Oct)](2026-10-25-scheduled-tasks-new-services.md)
