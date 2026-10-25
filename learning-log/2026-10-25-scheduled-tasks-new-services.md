@@ -320,4 +320,4 @@ NW-016,Persistence,T1053.005,Scheduled Task/Job: Scheduled Task
 - MITRE ATT&CK: [T1053.005 Scheduled Task](https://attack.mitre.org/techniques/T1053/005/) · [T1543.003 Windows Service](https://attack.mitre.org/techniques/T1543/003/)
 - SigmaHQ: [Service Control Manager rules](https://github.com/SigmaHQ/sigma/tree/master/rules/windows/builtin/system/service_control_manager) · [Windows Security log rules](https://github.com/SigmaHQ/sigma/tree/master/rules/windows/builtin/security)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 16: Defence evasion: cleared audit logs (1102) (26 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 16: Defence evasion: cleared audit logs (1102) (26 Oct)](2026-10-26-cleared-audit-logs.md)
