@@ -48,7 +48,7 @@ and every entry ends with exercises answered in my own words.
 | 14 | 24 Oct | Persistence: new accounts and admin group changes (4720, 4732) | [Read](2026-10-24-new-accounts-admin-groups.md) |
 | 15 | 25 Oct | Persistence: scheduled tasks and new services (4698, 7045) | [Read](2026-10-25-scheduled-tasks-new-services.md) |
 | 16 | 26 Oct | Defence evasion: cleared audit logs (1102) | [Read](2026-10-26-cleared-audit-logs.md) |
-| 17 | 27 Oct | Alert triage: true/false positives and severity | |
+| 17 | 27 Oct | Alert triage: true/false positives and severity | [Read](2026-10-27-alert-triage.md) |
 | 18 | 28 Oct | The incident response lifecycle (NIST SP 800-61) | |
 | 19 | 29 Oct | Writing a clear incident ticket | |
 | 20 | 30 Oct | Mini case: putting it all together | |
@@ -58,7 +58,7 @@ and every entry ends with exercises answered in my own words.
 
 ## Progress
 
-- Entries published: **16 / 21**
+- Entries published: **17 / 21**
 - Exercises answered: tracked in each entry's **My answers** section
 
 ➡️ Back to the main [Beginner SOC Lab](../README.md).

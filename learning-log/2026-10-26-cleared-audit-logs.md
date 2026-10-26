@@ -300,4 +300,4 @@ NW-018,Defense Impairment,T1685.005,Disable or Modify Tools: Clear Windows Event
 - SigmaHQ: [Microsoft-Windows-Eventlog (System) rules](https://github.com/SigmaHQ/sigma/tree/master/rules/windows/builtin/system/microsoft_windows_eventlog) · [Windows Security log rules](https://github.com/SigmaHQ/sigma/tree/master/rules/windows/builtin/security)
 - NIST: [SP 800-92, Guide to Computer Security Log Management](https://csrc.nist.gov/pubs/sp/800/92/final)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 17: Alert triage: true/false positives and severity (27 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 17: Alert triage: true/false positives and severity (27 Oct)](2026-10-27-alert-triage.md)
