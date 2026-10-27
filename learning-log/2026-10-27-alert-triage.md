@@ -286,4 +286,4 @@ or new servers fall into `unknown`.
 - MITRE ATT&CK: [Enterprise tactics](https://attack.mitre.org/tactics/enterprise/)
 - NIST: [SP 800-61 Rev. 3, Incident Response Recommendations and Considerations for Cybersecurity Risk Management](https://csrc.nist.gov/pubs/sp/800/61/r3/final)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 18: The incident response lifecycle (NIST SP 800-61) (28 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 18: The incident response lifecycle (NIST SP 800-61) (28 Oct)](2026-10-28-incident-response-lifecycle.md)
