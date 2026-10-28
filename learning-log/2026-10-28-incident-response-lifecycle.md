@@ -253,4 +253,4 @@ allow-list.
 - Microsoft Learn: [SecurityEvent table reference](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent) · [The `in` and `in~` operators (KQL)](https://learn.microsoft.com/en-us/kusto/query/in-operator) · [Watchlists in Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/watchlists)
 - MITRE ATT&CK: [T1136.001 Create Account: Local Account](https://attack.mitre.org/techniques/T1136/001/) · [T1078.003 Valid Accounts: Local Accounts](https://attack.mitre.org/techniques/T1078/003/)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 19: Writing a clear incident ticket (29 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 19: Writing a clear incident ticket (29 Oct)](2026-10-29-writing-incident-tickets.md)
