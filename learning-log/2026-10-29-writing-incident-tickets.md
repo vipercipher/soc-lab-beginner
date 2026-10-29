@@ -267,4 +267,4 @@ analyst queue, or it becomes yet another source of noise.
 - Microsoft Learn: [SecurityIncident table reference](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityincident) · [Manage your SOC better with incident metrics](https://learn.microsoft.com/en-us/azure/sentinel/manage-soc-with-incident-metrics) · [Navigate and triage incidents in Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/incident-navigate-triage)
 - Microsoft Learn: [Incidents REST API (`owner` and `additionalData` fields)](https://learn.microsoft.com/en-us/rest/api/securityinsights/incidents/create-or-update) · [arg_max() (KQL)](https://learn.microsoft.com/en-us/kusto/query/arg-max-aggregation-function) · [case() (KQL)](https://learn.microsoft.com/en-us/kusto/query/case-function)
 
-⬅️ [Learning log index](README.md) · ➡️ Day 20: Mini case: putting it all together (30 Oct)
+⬅️ [Learning log index](README.md) · ➡️ [Day 20: Mini case: putting it all together (30 Oct)](2026-10-30-mini-case.md)

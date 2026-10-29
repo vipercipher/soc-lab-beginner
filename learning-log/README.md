@@ -51,14 +51,14 @@ and every entry ends with exercises answered in my own words.
 | 17 | 27 Oct | Alert triage: true/false positives and severity | [Read](2026-10-27-alert-triage.md) |
 | 18 | 28 Oct | The incident response lifecycle (NIST SP 800-61) | [Read](2026-10-28-incident-response-lifecycle.md) |
 | 19 | 29 Oct | Writing a clear incident ticket | [Read](2026-10-29-writing-incident-tickets.md) |
-| 20 | 30 Oct | Mini case: putting it all together | |
+| 20 | 30 Oct | Mini case: putting it all together | [Read](2026-10-30-mini-case.md) |
 | 21 | 31 Oct | Month recap and what to study next | |
 
 ---
 
 ## Progress
 
-- Entries published: **19 / 21**
+- Entries published: **20 / 21**
 - Exercises answered: tracked in each entry's **My answers** section
 
 ➡️ Back to the main [Beginner SOC Lab](../README.md).
